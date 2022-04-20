@@ -80,11 +80,16 @@ header{
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-    display: grid;
+
+    /*display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px,300px));
     grid-template-rows: 300px;
     grid-auto-rows: 300px;
+    justify-content: center;*/
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 .autacao{
     display: flex;
@@ -93,6 +98,10 @@ header{
     align-items: center;
     border: 1px solid #00A8FF/*#005281*/;
     padding: 10px 20px;
+    /*apagar no grid*/
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
 }
 .imgAtuacao{
     width: 50%;
