@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    max-width: 100%;
+    font-size: 1em;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    line-height: 1.5em;
+}
+h2{
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px 0px;
+}
+p{
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    font-size: 1.25em;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+.tituloBranco{
+    color: rgb(240, 248, 255);
+}
+header{
+    background-color: #103a53/*#1a3441*/;
+    width: 100vw;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+#imgHeader{
+    height: 100%;
+}
+#infoHeader > *{
+    color: rgb(240, 248, 255);
+    display: block;
+    text-align: center;
+    font-size: 1.25em;
+}
+#infoHeader > h1{
+    font-size: 2em;
+}
+#contato{
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: green;
+    border-radius: 10px;
+}
+#contato > a{
+    display: block;
+    width: 100%;
+    padding: 10px 30px;
+    font-size: 1.25em;
+    color: rgb(240, 248, 255);
+}
+#secAreasAtuacao{
+    background-color:#1a3441 /*#121b20*/;
+    padding: 20px;
+    margin: 30px 0;
+}
+#atuacaoConteiner{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,300px));
+    grid-template-rows: 300px;
+    grid-auto-rows: 300px;
+    justify-content: center;
+}
+.autacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #00A8FF/*#005281*/;
+    padding: 10px 20px;
+}
+.imgAtuacao{
+    width: 50%;
+    min-width: 100px;
+}
+.autacao > h3{
+    font-size: 1.5em;
+}
+
+footer{
+    padding: 10px 20px;
+    background-color: #1a3441;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.imgFooter{
+    width: 50px;
+    padding: 5px;
+    border-radius: 50%;
+}
+.imgFooter:hover{
+    animation: giro 1s linear alternate-reverse;
+}
+
+@keyframes giro {
+    to{
+        transform: rotate(360deg);
+    }
+}
