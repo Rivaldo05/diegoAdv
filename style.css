@@ -1,22 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');*/
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     list-style: none;
     text-decoration: none;
     border: none;
     background-color: transparent;
     color: rgb(0, 0, 0);
-    line-height: 1.5em;
+    line-height: 1.25em;
 }
-h2{
+h1, h2, h3{
     font-size: 2em;
     text-align: center;
     text-transform: uppercase;
     margin: 30px 0px;
+    font-family: 'Source-Sans-Pro';
 }
 p{
     width: 100%;
@@ -36,7 +44,7 @@ img{
     color: rgb(240, 248, 255);
 }
 header{
-    background-color: #64615c/*#103a53#1a3441*/;
+    background-color: #103a53 /*#1a3441*/;
     width: 100vw;
     padding: 10px;
     display: flex;
@@ -48,14 +56,14 @@ header{
     height: 100%;
     max-width: 70px;
 }
-#infoHeader > *{
-    color: rgb(240, 248, 255);
+#infoHeader > span{
     display: block;
+    font-family: 'Allura';
     text-align: center;
-    font-size: 1.25em;
+    font-size: 2em;
 }
 #infoHeader > h1{
-    font-size: 2em;
+    margin: 0;
     text-decoration: underline;
 }
 .contato{
@@ -74,7 +82,7 @@ header{
     color: rgb(240, 248, 255);
 }
 #secAreasAtuacao{
-    background-color: #1b1b1b/*#1a3441 #121b20*/;
+    background-color: #1a3441 /*#121b20*/;
     padding: 20px;
     margin: 30px 0;
 }
@@ -82,30 +90,32 @@ header{
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-
-    /*display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,300px));
-    grid-template-rows: 300px;
-    grid-auto-rows: 300px;
-    justify-content: center;*/
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
     justify-content: center;
     align-items: center;
     gap: 50px;
+    box-sizing: border-box;
+
 }
 .autacao{
+    transition: 1s;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    border: 1px solid #64615c/*#00A8FF #005281*/;
+    border: 1px solid #00A8FF /*#005281*/;
     padding: 10px 20px;
-    /*apagar no grid*/
     width: 100%;
-    max-width: 300px;
-    height: 300px;
-    flex-basis: content;
+    height: 100%;
+
+}
+.autacao:hover{
+    background-color: #005281;
+    border: none;
+}
+.autacao > p{
+    text-align: left;
 }
 .imgAtuacao{
     width: 50%;
@@ -117,11 +127,10 @@ header{
 
 footer{
     padding: 10px 20px;
-    background-color: #64615c/*#1a3441*/;
+    background-color:#1a3441;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .imgFooter{
     width: 50px;
@@ -131,16 +140,29 @@ footer{
 .imgFooter:hover{
     animation: giro 1s linear alternate-reverse;
 }
-
+#btfixo{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    animation: wpp 1s linear alternate infinite;
+}
 @keyframes giro {
     to{
         transform: rotate(360deg);
     }
 }
-
+@keyframes wpp {
+    to{
+        transform: rotate(-180deg);
+        opacity: .8;
+    }
+}
 @media screen  and (max-width:630px){
     p{
         font-size: 1em;
+    }
+    #infoHeader > *{
+        font-size: 1.5em !important;
     }
     
 }
