@@ -112,11 +112,9 @@ header{
 }
 .autacao:hover{
     background-color: #005281;
-    border: none;
+    border-color: rgb(255, 228, 196);
 }
-.autacao > p{
-    text-align: left;
-}
+
 .imgAtuacao{
     width: 50%;
     min-width: 100px;
@@ -144,6 +142,7 @@ footer{
     position: fixed;
     right: 30px;
     bottom: 30px;
+    padding: 0;
     animation: wpp 1s linear alternate infinite;
 }
 @keyframes giro {
