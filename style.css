@@ -44,7 +44,7 @@ img{
     color: rgb(240, 248, 255);
 }
 header{
-    background-color: #103a53 /*#1a3441*/;
+    background-color: #182837/*#103a53 /*#1a3441*/;
     width: 100vw;
     padding: 10px;
     display: flex;
@@ -125,7 +125,7 @@ header{
 
 footer{
     padding: 10px 20px;
-    background-color:#1a3441;
+    background-color:#182837;
     display: flex;
     justify-content: center;
     align-items: center;
