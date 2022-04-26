@@ -19,7 +19,7 @@
     color: rgb(0, 0, 0);
     line-height: 1.25em;
 }
-h1, h2, h3{
+h2, h3{
     font-size: 2em;
     text-align: center;
     text-transform: uppercase;
@@ -56,7 +56,8 @@ header{
     height: 100%;
     max-width: 70px;
 }
-#infoHeader > span{
+#infoHeader > *{
+    color: #cc8105
     display: block;
     font-family: 'Allura';
     text-align: center;
@@ -64,6 +65,7 @@ header{
 }
 #infoHeader > h1{
     margin: 0;
+    font-size: 3em;
     text-decoration: underline;
 }
 .contato{
@@ -160,8 +162,11 @@ footer{
     p{
         font-size: 1em;
     }
-    #infoHeader > *{
-        font-size: 1.5em !important;
+    #infoHeader > span{
+        font-size: 1.5em;
+    }
+    #infoHeader > h1{
+        font-size:2em;
     }
     
 }
