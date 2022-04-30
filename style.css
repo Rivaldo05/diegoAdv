@@ -79,6 +79,7 @@ header{
     align-items: center;
     background-image: url('imagens/banner.jpg');
     background-position: center;
+    background-attachment: fixed;
 }
 #banner > h2{
     z-index: 2;
