@@ -55,6 +55,7 @@ header{
 #imgHeader{
     height: 100%;
     max-width: 70px;
+    animation: logo 1s linear;
 }
 #infoHeader > * {
     display: block;
@@ -173,6 +174,14 @@ footer{
     padding: 0;
     animation: wpp 1s linear alternate infinite;
 }
+@keyframes logo {
+    from{
+        transform: translate3d(0,-50px,0);
+    }
+    to{
+        transform: translate3d(0,0,0);
+    }
+}
 @keyframes giro {
     to{
         transform: rotate(360deg);
@@ -186,7 +195,11 @@ footer{
 }
 @media screen  and (max-width:630px){
     p{
+        text-align: justify;
         font-size: 1em;
+    }
+    .autacao > p{
+        text-align: center;
     }
     #infoHeader > span{
         font-size: 1.5em;
