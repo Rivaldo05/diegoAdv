@@ -57,7 +57,7 @@ header{
     max-width: 70px;
     animation: logo 1s linear;
 }
-#infoHeader > * {
+#infoHeader > *, .infoFooter{
     display: block;
     color: #d8bb7d;
     font-family: 'Allura';
@@ -151,10 +151,12 @@ header{
 .autacao > h3{
     font-size: 1.5em;
 }
-
 footer{
     padding: 10px 20px;
     background-color:#182837;
+}
+#footerConteiner{
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,7 +231,7 @@ footer{
     .autacao > p{
         text-align: center;
     }
-    #infoHeader > span{
+    #infoHeader > span, .infoFooter{
         font-size: 1.5em;
     }
     #infoHeader > h1 {
